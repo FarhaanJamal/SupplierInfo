@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<br/>
+<h3 align="center">Search</h3>
+<form method="POST">
+    <br/>
+    <div align="right">
+        <input type="text" class="form-control" id="search" name="search" placeholder="Enter the items name"/>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+    <br/>
+</form>
+<ul class="list-group list-group-flush" id="result">
+    {% if item != "{}" %}
+        <h2 align="center">{{ itemName }}</h2>
+        <br/>
+        <div style="padding-left: 15%; padding-right: 15%;">
+            <h5>
+                <span style="float: left;">Supplier Name</span>
+                <span style="float: right;">Amount</span>
+            </h5>
+        </div>
+        <br/>
+        {% for supplier in item.suppliers %}
+            <li class="list-group-item" style="padding-left: 15%; padding-right: 15%;">
+                <h6>
+                    <span style="float: left;">{{ supplier.supplierName }}</span>
+                    <span style="float: right;">{{ "₹" }}{{ supplier.amount }}</span>
+                </h6>
+            </li>
+        {% endfor %}
+    {% endif %}
+</ul>
+
+{% endblock %}

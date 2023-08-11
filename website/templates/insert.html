@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Edit{% endblock %}
+{% block content%}
+<form method="POST">
+    <br/>
+    <h3 align="center">Insert / Edit</h3>
+    <br/>
+    <div class="form-group">
+        <label for="itemName">Item Name</label>
+        <input type="text" class="form-control" id="itemName" name="itemName" placeholder="Enter the items name"/>
+    </div>
+    <div class="form-group">
+        <label for="supplierName">Supplier Name</label>
+        <input type="text" class="form-control" id="supplierName" name="supplierName" placeholder="Enter the suppliers name"/>
+    </div>
+    <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="number" step=".01" class="form-control" id="amount" name="amount" placeholder="Enter the amount"/>
+    <br/>
+    <button type="submit" name="insert" class="btn btn-primary">Edit</button>
+    <br/>
+    <p style="padding-top: 35px;  font-size: small;">To delete an item: Enter that item with any one of its suppliers and Enter -1000 in amount.<br/>To delete a supplier: Enter that item with that supplier and Enter -1001 in amount.</p>
+</form>
+{% endblock %}
