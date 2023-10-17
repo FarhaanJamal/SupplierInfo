@@ -1,4 +1,4 @@
 flask==2.3.2
 flask_sqlalchemy==0.6
-flask_login==3.0.5
+flask_login==0.6.2
 werkzeug==2.3.6
