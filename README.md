@@ -1,5 +1,5 @@
 # SupplierInfo
-A web app project, helps to search the best supplier for Items/Goods. With features to include new items and new suppliers to existing items, to modify and delete items/suppliers.
+Experience here: https://farhaanjamal.pythonanywhere.com
 
 
 ![image](https://github.com/FarhaanJamal/SupplierInfo/assets/95125546/b002a5a6-fc7b-46dc-a785-a8fd4f092201)
